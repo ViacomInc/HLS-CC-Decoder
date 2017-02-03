@@ -1,0 +1,33 @@
+{
+	"name": "608-caption-renderer",
+	"description": "Demo renderer for CEA-608 caption",
+	"author": "Shane Kerr <shane.kerr@redspace.com>",
+
+	"contributors": [{
+		"name": "Shane Kerr",
+		"email": "<shane.kerr@redspace.com>"
+	}, {
+		"name": "Brent Smith",
+		"email": "<brent.smith@redspace.com>"
+	}, {
+		"name": "Andrew Hamilton",
+		"email": "<andrew.hamilton@redspace.com>"
+	}, {
+		"name": "Joe Park",
+		"email": "<joe.park@viacom.com>"
+	}],
+
+	"dependencies": {
+		"underscore": "1.8.3",
+		"npm-zepto": "1.1.7"
+	},
+
+	"devDependencies": {
+		"webpack": "1.12.9"
+	},
+
+	"scripts": {
+		"clean": "node build/clean-dist.js",
+		"pack": "node node_modules/.bin/webpack --hide-modules --config webpack.config.js"
+	}
+}
